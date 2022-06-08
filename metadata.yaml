@@ -15,5 +15,5 @@
 homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
-  - sha: b36fe5220fe85878182a0b18d712a615679e260c
+  - sha: 0997e99e4202d4825f981262b1d3e0c47ab28302
     changeNotes: initial release

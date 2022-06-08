@@ -14,7 +14,11 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Snap ConversionAPI ServerSide",
-  "categories": ["CONVERSION", "ADVERTISING", "ANALYTICS"],
+  "categories": [
+    "CONVERSION",
+    "ADVERTISING",
+    "ANALYTICS"
+  ],
   "brand": {
     "id": "brand_dummy",
     "displayName": ""

@@ -14,4 +14,6 @@
 
 homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
-# Todo(destiny): Update sha version and change notes public release.
+versions:
+  - sha: b36fe5220fe85878182a0b18d712a615679e260c
+    changeNotes: initial release

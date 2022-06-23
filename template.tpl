@@ -498,7 +498,46 @@ function mapEvent(eventData, data) {
 function addServerEventData(eventData, data, mappedData) {
     let serverEventDataList = {};
 
-    if (eventData.transaction_id) mappedData.event_id = eventData.transaction_id;
+    if (eventData.event_tag) {
+      mappedData.event_tag = eventData.event_tag;
+    }
+    if (eventData.item_category) {
+      mappedData.item_category = eventData.item_category;
+    }
+    if (eventData.item_ids) {
+      mappedData.item_ids = eventData.item_ids;
+    }
+    if (eventData.description) {
+      mappedData.description = eventData.description;
+    }
+    if (eventData.number_items) {
+      mappedData.number_items = eventData.number_items;
+    }
+    if (eventData.price) {
+      mappedData.price = eventData.price;
+    }
+    if (eventData.currency) {
+      mappedData.currency = eventData.currency;
+    }
+    if (eventData.transaction_id) {
+      mappedData.transaction_id = eventData.transaction_id;
+    }
+    if (eventData.level) {
+      mappedData.level = eventData.level;
+    }
+    if (eventData.client_dedup_id) {
+      mappedData.client_dedup_id = eventData.client_dedup_id;
+    }
+    if (eventData.data_use) {
+      mappedData.data_use = eventData.data_use;
+    }
+    if (eventData.search_string) {
+      mappedData.search_string = eventData.search_string;
+    }
+    if (eventData.sign_up_method) {
+      mappedData.sign_up_method = eventData.sign_up_method;
+    }
+
 
     if (data.serverEventDataList) {
         data.serverEventDataList.forEach(d => {
@@ -523,7 +562,17 @@ function addServerEventData(eventData, data, mappedData) {
 }
 
 function addUserData(eventData, mappedData) {
-  if (eventData.email) mappedData.hashed_email = sha256HashIfNotHashed(eventData.email);
+  if (eventData.email) {
+    mappedData.hashed_email = sha256HashIfNotHashed(eventData.email);
+  } else if (eventData.hashed_email) {
+    mappedData.hashed_email = eventData.hashed_email;
+  }
+  
+  if (eventData.phone_number) {
+    mappedData.hashed_phone_number = sha256HashIfNotHashed(eventData.phone_number);
+  } else if (eventData.hashed_phone_number) {
+    mappedData.hashed_phone_number = eventData.hashed_phone_number;
+  }
   return mappedData;
 }
 

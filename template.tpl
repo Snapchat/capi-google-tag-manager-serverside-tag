@@ -441,6 +441,13 @@ function getEventName(data) {
             'sign_up': 'SIGN_UP',
             'purchase': 'PURCHASE',
             'view_item': 'VIEW_CONTENT',
+            'add_to_wishlist': 'ADD_TO_WISHLIST',
+            'begin_checkout': 'START_CHECKOUT',
+            'add_payment_info': 'ADD_BILLING',
+            'view_item_list': 'LIST_VIEW',
+            'tutorial_complete': 'COMPLETE_TUTORIAL',
+            'search': 'SEARCH',
+            'generate_lead': 'SIGN_UP',
             'gtm4wp.addProductToCartEEC': 'ADD_CART',
             'gtm4wp.productClickEEC': 'VIEW_CONTENT',
             'gtm4wp.orderCompletedEEC': 'PURCHASE'
@@ -488,9 +495,6 @@ function mapEvent(eventData, data) {
     mappedData = addUserData(eventData, mappedData);
     mappedData = overrideDataIfNeeded(data, mappedData);
     mappedData = cleanupData(mappedData);
-
-    logToConsole('Event raw data: ', eventData);
-    logToConsole('Snap mapped data: ', mappedData);
 
     return mappedData;
 }

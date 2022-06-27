@@ -16,10 +16,13 @@ homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
   # Latest version
+  - sha: 798036929f29fad66e8ed566522e3eafcd189279
+    changeNotes:
+      Add more GA4 event mapping support to template
+  # Older version
   - sha: d23fe6665ae92191ce1a168cc521abc53737699b
     changeNotes: 
-      Support auto loading conversion api parameters from JSON eventData.
+      Support auto loading conversion api parameters from JSON eventData
       Support passing plain text phone_number and hashing it before sending to Conversion API
-  # Older version
   - sha: 0997e99e4202d4825f981262b1d3e0c47ab28302
     changeNotes: initial release

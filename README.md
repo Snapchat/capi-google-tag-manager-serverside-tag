@@ -4,4 +4,4 @@ The Snap Conversion API community template is a Google Tag Manager community gal
 
 # Installation
 
-Please follow the instructions [here](https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US).
+Please follow the installation guide [here](https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US).

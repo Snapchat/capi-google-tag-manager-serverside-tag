@@ -397,8 +397,13 @@ function createUUID() {
 }
 
 const eventData = getAllEventData();
+const containerVersion = getContainerVersion();
+const isPreview = containerVersion.previewMode;
 
-const postUrl = 'https://tr.snapchat.com/v2/conversion';
+let postUrl = 'https://tr.snapchat.com/v2/conversion';
+if(isPreview){
+  postUrl = postUrl + '/validate';
+}
 
 function getCookie1() {
   const existingCookie1 = getCookieValues('_scid')[0];

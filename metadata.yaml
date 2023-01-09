@@ -16,6 +16,10 @@ homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
   # Latest version
+  - sha: 5fe343fe1bfed2c2cdc0a7cbfb48aa7a9be1652a
+    changeNotes:
+      Add UUID-c1 and clickId support
+  # Previous version
   - sha: 798036929f29fad66e8ed566522e3eafcd189279
     changeNotes:
       Add more GA4 event mapping support to template

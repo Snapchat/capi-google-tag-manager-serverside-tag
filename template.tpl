@@ -20,8 +20,8 @@ ___INFO___
     "ANALYTICS"
   ],
   "brand": {
-    "id": "brand_dummy",
-    "displayName": ""
+    "id": "github.com_Snapchat",
+    "displayName": "Snapchat"
   },
   "description": "The server-side tag template to send event from your tagging server to Snap Conversion API.",
   "containerContexts": [
@@ -349,6 +349,14 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "page_domain",
             "displayValue": "page_domain"
+          },
+          {
+            "value": "click_id",
+            "displayValue": "click_id"
+          },
+          {
+            "value": "uuid_c1",
+            "displayValue": "uuid_c1"
           }
         ]
       },
@@ -468,7 +476,7 @@ function sha256HashIfNotHashed(input){
   if(type == 'undefined' || type == null) {
     return null;
   }
-  if(isAlreadyHashed(input)){
+  if(isAlreadyHashed(input)) {
     return input;
   }
   return sha256Sync(input.trim().toLowerCase(), {outputEncoding: 'hex'});

@@ -339,8 +339,8 @@ ___TEMPLATE_PARAMETERS___
             "displayValue": "device.limit_ad_tracking"
           },
           {
-            "value": "brand_id",
-            "displayValue": "brand_id"
+            "value": "brand",
+            "displayValue": "brand"
           },
           {
             "value": "event_set_id",

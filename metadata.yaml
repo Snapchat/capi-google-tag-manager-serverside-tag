@@ -15,6 +15,9 @@
 homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
+  - sha: ea72c5e79b6f0a9369fe1db5ba6704e38f08d905
+    changeNotes:
+      Rename brand_ids to brands
   # Latest version
   - sha: 5fe343fe1bfed2c2cdc0a7cbfb48aa7a9be1652a
     changeNotes:

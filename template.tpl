@@ -357,6 +357,10 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "uuid_c1",
             "displayValue": "uuid_c1"
+          },
+          {
+            "value": "data_use",
+            "displayValue": "data_use"
           }
         ]
       },

@@ -361,6 +361,10 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "data_use",
             "displayValue": "data_use"
+          },
+          {
+            "value": "advertiser_cookie_1",
+            "displayValue": "advertiser_cookie_1"
           }
         ]
       },

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-homepage: "https://marketingapi.snapchat.com/docs/conversion.html"
+homepage: "https://docs.snap.com/api/marketing-api/Conversions-API/Introduction"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
   - sha: c3e940b1483a05aba4cafa86955957f447a89319

@@ -61,7 +61,7 @@ ___TEMPLATE_PARAMETERS___
     "type": "SELECT",
     "name": "inheritEventName",
     "displayName": "Event Name Setup Method",
-    "macrosInSelect": true,
+    "macrosInSelect": false,
     "selectItems": [
       {
         "value": "inherit",
@@ -262,7 +262,7 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "help": "Where the event took place.",
-    "macrosInSelect": true
+    "macrosInSelect": false
   },
   {
     "type": "GROUP",

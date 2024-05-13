@@ -564,12 +564,12 @@ function addUserData(eventData, mappedData) {
     locationData.postal_code = eventData.event_location.postal_code;
   }
   
-  let em = eventData.email || eventData.hashed_email;
+  let em = eventData.email || eventData.hashed_email || userData.email || userData.email_address;
   if (em) {
     mappedData.user_data.em = [sha256HashIfNotHashed(em)];
   }
   
-  let ph = eventData.phone_number || eventData.hashed_phone_number;
+  let ph = eventData.phone_number || eventData.hashed_phone_number|| userData.phone_number;
   if (ph) {
     ph = ph.replace("+", "").replace("-", "").replace(" ", "").replace("(", "").replace(")", "");
     mappedData.user_data.ph = [sha256HashIfNotHashed(ph)];

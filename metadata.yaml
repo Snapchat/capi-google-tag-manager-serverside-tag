@@ -15,6 +15,8 @@
 homepage: "https://docs.snap.com/api/marketing-api/Conversions-API/Introduction"
 documentation: "https://businesshelp.snapchat.com/s/article/capi-gtm?language=en_US"
 versions:
+  - sha: 7b7dcc4c80bc30d238455a6c0f3458850896dc1c
+    changeNotes: Switch to Snap Conversions API v3 implementation
   - sha: c3e940b1483a05aba4cafa86955957f447a89319
     changeNotes: Add advertiser_cookie_1 parameter
   - sha: 3c477a4dd518679fcec978e323cb1bf304017e3d

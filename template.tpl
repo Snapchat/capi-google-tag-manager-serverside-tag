@@ -262,7 +262,13 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "help": "Where the event took place.",
-    "macrosInSelect": false
+    "macrosInSelect": false,
+    "defaultValue": "WEB",
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "GROUP",

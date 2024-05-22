@@ -262,7 +262,13 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "help": "Where the event took place.",
-    "macrosInSelect": false
+    "macrosInSelect": false,
+    "defaultValue": "WEB",
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   },
   {
     "type": "GROUP",
@@ -522,7 +528,7 @@ function addServerData(eventData, mappedData) {
   mappedData.event_time = eventData.event_time || getTimestampMillis();
   mappedData.event_source_url = eventData.page_location || eventData.page_referrer || getRequestHeader('referer');
   mappedData.event_id = eventData.event_id;
-  mappedData.action_source = data.actionSource;
+  mappedData.action_source = data.actionSource || 'WEB';
   mappedData.data_processing_options = eventData.data_processing_options;
   
   if (data.serverParameters) {
